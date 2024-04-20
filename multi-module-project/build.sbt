@@ -4,7 +4,8 @@ ThisBuild / name := "multi-module"
 ThisBuild / organization := "com.rockthejvm"
 
 lazy val core = (project in file("core")).settings(
-    libraryDependencies += Constants.rootPackage %% "config" % "1.4.2"
+    assembly / mainClass := Some("com.rockthejvm.CoreApp"), 
+    libraryDependencies += Constants.rootPackage %% "cats-effect" % "3.3.1"
 )
 
 lazy val server = (project in file("server")).dependsOn(core)

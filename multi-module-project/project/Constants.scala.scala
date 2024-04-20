@@ -1,3 +1,3 @@
 object Constants {
-    val rootPackage = "com.typesafe"
+    val rootPackage = "org.typelevel"
 }
