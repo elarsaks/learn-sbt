@@ -1,0 +1,33 @@
+# Compiled bytecode
+/target/
+*.class
+*.jar
+
+# IntelliJ
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac OS
+.DS_Store
+
+# Operating Systems
+.DS_Store
+Thumbs.db
+
+# Logs
+/logs/
+
+# Temporary files
+/.cache/
+/.history/
+/.tmp/
+/.DS_Store
+
+# sbt specific
+.sbtserver/
+.sbtrc
+.sbtopts
