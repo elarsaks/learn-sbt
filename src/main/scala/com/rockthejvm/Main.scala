@@ -1,5 +1,6 @@
 package com.rockthejvm
 
 object Main {
-    def main(args: Array[String]): Unit = println("Learning SBT!")
+    val fansiStr: fansi.Str = fansi.Color.Red("This should be red string")
+    def main(args: Array[String]): Unit = println(fansiStr)
 }
