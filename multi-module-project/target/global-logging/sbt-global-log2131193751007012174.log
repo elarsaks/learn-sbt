@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(printerTask, Some(d863598b-78d2-40d1-8535-aa5b5cd2de3b), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(printerTask, Some(b0fe1c8f-4b8e-439d-b5d5-6fd16cf1a335), Some(CommandSource(console0)))[0m
 [0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: printerTask[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 20 Apr 2024, 18.21.23[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 20 Apr 2024, 18.31.18[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

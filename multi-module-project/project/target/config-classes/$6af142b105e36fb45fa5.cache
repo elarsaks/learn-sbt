@@ -1,5 +1,6 @@
 root
 server
 core
+uuidStringSetting
 uuidStringTask
 printerTask

@@ -4,28 +4,41 @@ ThisBuild / name := "multi-module"
 ThisBuild / organization := "com.rockthejvm"
 
 // Add external resolver
-// resolvers += Resolver.url("my-test-repo", url("https://rockthejvm.com/repository/..."))
+ThisBuild / resolvers += Resolver.url("my-test-repo", url("https://rockthejvm.com/repository/..."))
 
-// add Maven local repo
-// resolver += Resolver.mavenLocal 
+// Add Maven local repo
+ThisBuild / resolvers += Resolver.mavenLocal 
 
-// custom tasks
+// Custom tasks
 lazy val printerTask = taskKey[Unit]("Custom Printer Task")
-printerTask := { // Binding code to task
-    val uuid = uuidStringTask.value
-    println(s"Generated uuid: $uuid")
-    CustomTaskPrinter.print()
+printerTask := {
+  val uuidTaskValue = uuidStringTask.value
+  println(s"Generated uuid from task: $uuidTaskValue")
+
+  val uuidSettingValue = uuidStringSetting.value
+  println(s"Generated uuid from setting: $uuidSettingValue")
+
+  CustomTaskPrinter.print()
 }
 
 lazy val uuidStringTask = taskKey[String]("Random UUID generator")
 uuidStringTask := {
-    StringTask.strTask()
+  StringTask.strTask()
 }
 
-lazy val core = (project in file("core")).settings(
+// Custom settings
+lazy val uuidStringSetting = settingKey[String]("Random UUID setting")
+uuidStringSetting := {
+  val uuid = StringTask.strTask()
+  // Add some more code here if needed
+  uuid
+}
+
+lazy val core = (project in file("core"))
+  .settings(
     assembly / mainClass := Some("com.rockthejvm.CoreApp"), 
     libraryDependencies += Constants.rootPackage %% "cats-effect" % "3.3.1"
-)
+  )
 
 lazy val server = (project in file("server")).dependsOn(core)
 
