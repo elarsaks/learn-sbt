@@ -1,4 +1,7 @@
-ThisBuild / scalaVersion := "3.3.1"
+val scala212 = "2.12.16"
+val scala331 = "3.3.1"
+
+ThisBuild / scalaVersion := scala331
 ThisBuild / version := "1.0.0"
 ThisBuild / name := "multi-module"
 ThisBuild / organization := "com.rockthejvm"
@@ -40,7 +43,8 @@ addCommandAlias("ci", "compile;test;assembly")
 lazy val core = (project in file("core"))
   .settings(
     assembly / mainClass := Some("com.rockthejvm.CoreApp"), 
-    libraryDependencies += Constants.rootPackage %% "cats-effect" % "3.3.1"
+    libraryDependencies += Constants.rootPackage %% "cats-effect" % "3.3.1",
+    crossScalaVersions := List(scala212, scala331)
   )
 
 lazy val server = (project in file("server")).dependsOn(core)
