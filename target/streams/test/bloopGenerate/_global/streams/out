@@ -1,0 +1,4 @@
+[debug] [learn-sbt-test] Classpath dependencies List()
+[debug] [learn-sbt-test] Dependencies from configurations List(learn-sbt)
+[debug] Bloop wrote the configuration of project 'learn-sbt-test' to 'C:\Users\elars\OneDrive\Työpöytä\Projects\learn-sbt\.bloop\learn-sbt-test.json'
+[success] Generated .bloop\learn-sbt-test.json

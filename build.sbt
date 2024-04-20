@@ -5,5 +5,6 @@ name := "rockthejvm"
 organization := "com.rockthejvm"
 
 libraryDependencies ++= Seq(
-    "com.lihaoyi" %% "fansi" % "0.4.0"
+    "com.lihaoyi" %% "fansi" % "0.4.0",
+    "org.scalatest" %% "scalatest" % "3.2.13" % Test
     )

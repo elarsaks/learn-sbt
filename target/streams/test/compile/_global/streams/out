@@ -1,0 +1,17 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: C:\Users\elars\OneDrive\Työpöytä\Projects\learn-sbt\src\test\scala\com\rockthejvm\SimpleTest.scala:3:30 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m3 |[0m[33mimport[0m org.scalatest.funsuite.AnySuite[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                              ^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mvalue AnySuite is not a member of org.scalatest.funsuite - did you mean funsuite.AnyFunSuite?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: C:\Users\elars\OneDrive\Työpöytä\Projects\learn-sbt\src\test\scala\com\rockthejvm\SimpleTest.scala:5:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mclass[0m [35mSimpleTest[0m [33mextends[0m [35mAnyFunSuite[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                         ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                         Not found: type AnyFunSuite[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: C:\Users\elars\OneDrive\Työpöytä\Projects\learn-sbt\src\test\scala\com\rockthejvm\SimpleTest.scala:6:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m    test([31m"simplest test possible"[0m){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m    ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m    Not found: test[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

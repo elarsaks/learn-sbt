@@ -10,3 +10,10 @@
 1713598292856:~compile
 1713598651640:compile
 1713598819247:runMain com.rockthejvm.Main
+1713598974415:compile
+1713599327974:test:testOnly
+1713599358798:test:testOnly com.rockthejvm.SimpleTest
+1713599402565:clear
+1713599407205:test:testOnly com.rockthejvm.SimpleTest
+1713599467263:test:testOnly *SimpleTest
+1713599494412:test
