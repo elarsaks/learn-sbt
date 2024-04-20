@@ -12,7 +12,14 @@ ThisBuild / organization := "com.rockthejvm"
 // custom tasks
 lazy val printerTask = taskKey[Unit]("Custom Printer Task")
 printerTask := { // Binding code to task
+    val uuid = uuidStringTask.value
+    println(s"Generated uuid: $uuid")
     CustomTaskPrinter.print()
+}
+
+lazy val uuidStringTask = taskKey[String]("Random UUID generator")
+uuidStringTask := {
+    StringTask.strTask()
 }
 
 lazy val core = (project in file("core")).settings(

@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\elars\OneDrive\Työpöytä\Projects\learn-sbt\multi-module-project\project\StringTask.scala:3:9: not found: value UUID[0m
+[0m[[0m[31merror[0m] [0m[0m        UUID.randomUUID.toString()[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
