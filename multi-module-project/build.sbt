@@ -34,6 +34,9 @@ uuidStringSetting := {
   uuid
 }
 
+// command aliases
+addCommandAlias("ci", "compile;test;assembly")
+
 lazy val core = (project in file("core"))
   .settings(
     assembly / mainClass := Some("com.rockthejvm.CoreApp"), 

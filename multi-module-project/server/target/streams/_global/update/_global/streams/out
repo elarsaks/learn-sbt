@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating server...[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnrecognized repository my-test-repo, ignoring it[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnrecognized repository my-test-repo, ignoring it[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating server[0m
